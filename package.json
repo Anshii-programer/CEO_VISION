@@ -1,0 +1,26 @@
+{
+  "name": "ceo_vision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "client": "npm run dev --prefix frontend",
+  "server": "npm run dev --prefix backend",
+  "dev": "concurrently \"npm run client\" \"npm run server\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anshii-programer/CEO_VISION.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Anshii-programer/CEO_VISION/issues"
+  },
+  "homepage": "https://github.com/Anshii-programer/CEO_VISION#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.4"
+  }
+}
