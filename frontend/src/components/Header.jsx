@@ -1,5 +1,3 @@
-import React from 'react';
-
 const verticalsList = [
   { id: 'enterprise', label: 'Enterprise Dashboard' },
   { id: 'startup', label: 'Startup Dashboard' },

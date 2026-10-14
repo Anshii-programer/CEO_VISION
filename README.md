@@ -1,89 +1,68 @@
-# CEO_VISION
+# CEO Vision CRM
 
-Professional AI CRM Project built with MERN Stack.
+A responsive CRM dashboard built with React, Vite, and Express. CRM records are saved locally in `backend/data/crm-data.json`.
 
-## Tech Stack
+## Requirements
 
-Frontend
-- React
-- Vite
-- JavaScript
+- Node.js 20.19+ (or 22.12+) and npm
 
-Backend
-- Node.js
-- Express.js
+## Run the project
 
-Database
-- MongoDB (Coming Soon)
+1. Open PowerShell in the project folder:
 
-Authentication
-- JWT (Coming Soon)
+   ```powershell
+   cd "C:\Users\ankit\Desktop\CEO_VISION\CEO_VISION"
+   ```
 
-## Project Structure
+2. Install the root, frontend, and backend packages:
 
-CEO_VISION/
-│
-├── frontend/
-├── backend/
-├── package.json
-└── README.md
+   ```powershell
+   npm install
+   npm install --prefix frontend
+   npm install --prefix backend
+   ```
 
-## Installation
+3. Start the frontend and backend together:
 
-Clone the repository
+   ```powershell
+   npm run dev
+   ```
 
-```bash
-git clone https://github.com/Anshii-programer/CEO_VISION.git
+4. Open the Vite URL printed in the terminal (usually `http://localhost:5173`). If port 5173 is busy, Vite prints an alternate port, such as `http://localhost:5174`.
+
+The frontend uses the API at `http://localhost:5000/api` by default. Set `VITE_API_URL` in a frontend `.env` file to use a different API URL. The backend port can be changed with `PORT` in the root `.env` file.
+
+### Run in two terminals
+
+If you prefer to start each service separately, run these from the project folder:
+
+Terminal 1:
+
+```powershell
+npm run server
 ```
 
-Go inside project
+Terminal 2:
 
-```bash
-cd CEO_VISION
+```powershell
+npm run client
 ```
 
-Install root packages
+## Features
 
-```bash
-npm install
-```
+- Dashboard with summaries, pipeline, activity, calendar, and team panels.
+- Routed client, lead, deal, project, task, calendar, employee, ticket, report, analytics, assistant, settings, and notification pages.
+- Eight industry workspaces: enterprise, startup, small business, e-commerce, healthcare, education, real estate, and finance.
+- Create records, update their status, delete records, search, and export CSV reports.
+- API health check at `http://localhost:5000/api/health`.
+- Records persist locally in `backend/data/crm-data.json`; this file is created automatically the first time the backend starts.
 
-Install frontend packages
+## Useful commands
 
-```bash
-cd frontend
-npm install
-```
-
-Install backend packages
-
-```bash
-cd ../backend
-npm install
-```
-
-Create `.env`
-
-```env
-PORT=5000
-```
-
-Go back to root
-
-```bash
-cd ..
-```
-
-Run project
-
-```bash
+```powershell
 npm run dev
+npm run client
+npm run server
+npm run build --prefix frontend
+npm run lint --prefix frontend
 ```
-
-Frontend
-
-http://localhost:5173
-
-Backend
-
-http://localhost:5000

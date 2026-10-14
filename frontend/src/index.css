@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #e8eef8;
+  background: #080e18;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --bg: #080e18;
+  --sidebar: #0b121e;
+  --panel: #0e1927;
+  --panel-soft: #111e2e;
+  --border: #1c2a3c;
+  --text: #e8eef8;
+  --muted: #8290a3;
+  --blue: #4b86ff;
+  --purple: #a083ff;
+  --green: #31cf91;
+  --cyan: #37c7e6;
+  --orange: #ff9952;
+  --yellow: #edbd50;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 360px; min-height: 100vh; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .65; }
+::selection { color: #fff; background: #496ceb88; }
